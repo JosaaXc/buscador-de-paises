@@ -16,7 +16,9 @@ class HomePage extends StatelessWidget {
               elevation: 0,
               splashColor: Colors.transparent,
               onPressed: () {
-                showSearch(context: context, delegate: CountrySearchDelegate());
+                showSearch(
+                    context: context,
+                    delegate: CountrySearchDelegate('Buscar Pais'));
               },
               child: const Text(
                 'Buscar',

@@ -5,6 +5,11 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 class CountrySearchDelegate extends SearchDelegate {
   @override
+  final String searchFieldLabel;
+
+  CountrySearchDelegate(this.searchFieldLabel);
+
+  @override
   List<Widget>? buildActions(BuildContext context) {
     return [
       IconButton(onPressed: () => query = '', icon: const Icon(Icons.clear))
